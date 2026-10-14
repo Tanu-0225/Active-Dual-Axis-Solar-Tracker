@@ -10,7 +10,7 @@ The system relies on a differential light-sensing array feeding into an Arduino 
 * **Actuation:** 2x Stepper Motors for Pan (Yaw) and Tilt (Pitch) axes
 * **Power Delivery:** Electromagnetic relay modules
 
-## 💻 Control Logic (Firmware)
+## 💻 Control Logic
 The core tracking logic is written in **C++** using the Arduino framework. It continuously samples analog signals from the LDR sensor array, calculates vertical and horizontal light differentials, and applies a deadband filter to prevent motor jitter during minor environmental light fluctuations (e.g., passing clouds). 
 
 *See `solar_tracker_firmware.cpp` for the bare-metal control implementation.*
@@ -20,5 +20,3 @@ The core tracking logic is written in **C++** using the Arduino framework. It co
 * **Efficiency Gains:** Validated the theoretical maximum power per unit area, capturing significantly more energy throughout the day than static PV counterparts.
 * **System Stability:** Minimized mechanical wear and power draw by utilizing optimized threshold-based movement logic.
 
----
-*Note: This repository contains the modernized Arduino C++ control logic and architectural overview of a physical mechatronics project.*
