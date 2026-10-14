@@ -10,7 +10,7 @@ The system relies on a differential light-sensing array feeding into a programma
 * **Control:** Closed-loop feedback via PLC / Microcontroller
 * **Power Delivery:** Electromagnetic relay modules
 
-## 💻 Control Logic (Firmware)
+## 💻 Control Logic 
 The core tracking logic is written in **C++**. It continuously samples analog signals from the LDR sensor array, calculates vertical and horizontal light differentials, and applies a deadband filter to prevent motor jitter during minor environmental light fluctuations (e.g., passing clouds). 
 
 *See `solar_tracker_firmware.cpp` for the bare-metal control implementation.*
